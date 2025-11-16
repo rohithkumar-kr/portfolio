@@ -64,7 +64,11 @@ export function ProjectCard({
             aria-hidden={!isRevealed}
           >
             <div className="text-white space-y-3">
-              <div className="flex flex-wrap gap-2" role="list" aria-label="Technologies used">
+              <div
+                className="flex flex-wrap gap-2"
+                role="list"
+                aria-label="Technologies used"
+              >
                 {tags.map((tag) => (
                   <Badge
                     key={tag}
@@ -96,7 +100,7 @@ export function ProjectCard({
                   <Button
                     size="sm"
                     variant="outline"
-                    className="border-white/30 text-white hover:bg-white/20 min-h-[44px] focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2"
+                    className="border-white/30 text-white bg-white/10 hover:bg-white/20 min-h-[44px] focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2"
                     onClick={(e) => {
                       e.stopPropagation();
                       window.open(codeUrl, "_blank");
